@@ -62,7 +62,7 @@ __Code Quality__ Make sure that your code is:
 * Well-formatted (2 spaces of indentation per code block)
 * Small commits pushed to github frequently.  The commits should focus on a single change. Avoid large commits that deal with many distinct changes to the code.
 
-Weâ€™ll also be looking at:
+We'll also be looking at:
 
 * Quality of communication around decision-making. Can you defend why you chose a certain technology or why you implemented your solution in a certain way?
 * Your ability to pick up new technologies and push yourself.
