@@ -8,15 +8,18 @@ small{
   color: black !important;
 }
 
+
 #list{
 padding: 30px;
 }
 
 .ajax, .work {
     overflow: scroll
+} 
 
-}
-    
+#picture {
+  border: solid black 8px;
+}  
 
 .photo {
  text-align: center;
@@ -28,15 +31,12 @@ padding: 30px;
     margin: 0 auto;
 }
 
-
 .row1 {
     display: inline-block
 }
 
-
 .row2 {
     display: inline-block;
-
 }
 
 ul {
@@ -54,6 +54,7 @@ li {
   position: relative;
   cursor: pointer;
 }
+
 li div {
   /*MAKE THE WIDTH AND HEIGHT THE SIZE OF ITS PARENT CONTAINER*/
   width: 100%;
@@ -64,37 +65,36 @@ li div {
   /*WHEN YOU ROTATE IT, YOU WILL NOT SEE THE BACKSIDE OF THE ELEMENT*/
   /*backface-visibility: hidden;*/
   transition: all 1.5s;
-
 }
+
 .border{
  border: solid black 4px;
 }
+
 /*WHEN I HOVER OVER, I WANT TO ROTATE THE FRONT AND THE BACK*/
 li:hover .front {
   /*REMOVE THE Z INDEX*/
   z-index: 0;
   transform: rotateY(180deg);
    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
-    backface-visibility: hidden;
-  
-
+    backface-visibility: hidden;  
 }
+
 li:hover .back {
   /*WITHOUT THIS WE ONLY ROTATE TO THE REVERSE - WE WANT IT TO ROTATE TO ITS RESTING SPOT*/
   transform: rotateY(0);
-
-
 }
+
 .front {
   /*THIS HELPS US SEE THE FRONT*/
   z-index: 3;
   color: black;
   text-align: center;
-  /*MAKE THE LINE HEIGHT EQUAL TO THE HEIGHT TO CENTER THE NUMBER*/
   line-height: normal;
   font-size: 30px;
   background: #bae2d2;
 }
+
 .back {
   /*SHOW THE PICTURE HERE - AS WE GO FROM 0-180 IT CHANGES*/
   /*THIS WILL REVERSE THE PIC*/
