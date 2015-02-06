@@ -2,7 +2,7 @@ $(document).ready(function(){
  
  $.ajaxSetup({
   data: {
-    access_token: "ae1f1bbdf3e8d9fed7ca625626c2694a854f02ce"
+    access_token: "19e064ab884f616ca9744f0a11bb9b648072cc3f"
   }
 });     
  //var gitUrls = []; 
@@ -29,4 +29,10 @@ function getRepos() {
 
  }
   getRepos();
+  
+ $("#photo").hover(function(){
+         $("#photo").effect( "shake", 
+          {times:4}, 1000 );
+      });
+
 });

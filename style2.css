@@ -1,23 +1,24 @@
 body{
-  background-color: #83D6FF;
+  /*background-color: #83D6FF;
   background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
   background-size: 50px 50px;
 /* The rectangle in which to repeat. 
    It can be fully wide in this case */
-  background-size: 100% 20px;
+  /*background-size: 100% 20px;*//**/
 }
 
-.masthead {
-  background-color: @brand-primary;
+#list{
+  padding: 40px;
 }
 
-.ajax{
+.ajax, .work {
     overflow: scroll
     
 }
 
 .photo {
- text-align: center; 
+ text-align: center;
+ border: none; 
 }
 
 .container {
@@ -63,6 +64,9 @@ li div {
   transition: all 1.5s;
 
 }
+.border{
+ border: solid black 4px;
+}
 /*WHEN I HOVER OVER, I WANT TO ROTATE THE FRONT AND THE BACK*/
 li:hover .front {
   /*REMOVE THE Z INDEX*/
@@ -96,8 +100,10 @@ li:hover .back {
   z-index: 2;
   color: black;
   text-align: center;
-  line-height: normal;
-  font-size: 30px;
+  margin: auto;
+  line-height: 100%;
+  font: sans-serif;
+  font-size: 18px;
   background: #f9e6f0;
 
 }
